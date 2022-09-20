@@ -8,17 +8,23 @@ import java.util.Random;
 
 public class Task4 {
     public static void main(String[] args) {
+
         int[] array = getArray();
+        System.out.println("Initial array: ");
+        System.out.println(Arrays.toString(array));
 
-        System.out.println("Initial array: "  );
-
-        int [] copyArray = Arrays.copyOf(array, array.length);
-        print(copyArray);
-
-
-        convertedMassive(copyArray);
-
+        int[] copyArray = convertedMassive(array);
         System.out.println("Array converted: " + "\n" + Arrays.toString(copyArray));
+    }
+
+    private static int[] convertedMassive(int[] array) {
+        int[] copyArray = Arrays.copyOf(array, array.length);
+        for (int i = 0; i < copyArray.length; i++) {
+            if (i % 2 == 0) {
+                copyArray[i] = 0;
+            }
+        }
+        return copyArray;
     }
 
     private static int[] getArray() {
@@ -28,17 +34,10 @@ public class Task4 {
             array[i] = rnd.nextInt();
         }
         return array;
+    }
 
-    }
-    public static void print(int[] array) {
-        System.out.println(Arrays.toString(array));
-    }
-    private static void convertedMassive(int[] copyArray) {
-        for (int i = 0; i < copyArray.length; i++) {
-            if (i % 2 == 0) {
-                copyArray[i] = 0;
-            }
-        }
-    }
+
 }
+
+
 

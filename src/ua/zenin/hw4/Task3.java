@@ -35,7 +35,7 @@ public class Task3 {
                 }
                 number++;
             }
-             if (count != 1) {
+             if (count > 1) {
                  rezult++;
             }
             number = 2;
