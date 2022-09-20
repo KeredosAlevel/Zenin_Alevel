@@ -34,28 +34,19 @@ public class Task2 {
             while (number <= array[i]) {
                 if (array[i] % number == 0) {
                     count++;
-                }number++;
-            }if (count != 1) {
+                }
+                number++;
+            }
+            if (count != 1) {
                 rezult++;
-            }number = 2;
+            }
+            number = 2;
             count = 0;
-        }return rezult;
-    }
-        public static void printMasive(int[] array) {
-            System.out.println("Initial array = " + Arrays.toString(array));
         }
+        return rezult;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public static void printMasive(int[] array) {
+        System.out.println("Initial array = " + Arrays.toString(array));
+    }
+}

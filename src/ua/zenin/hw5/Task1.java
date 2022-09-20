@@ -8,28 +8,24 @@ public class Task1 {
     public static void main(String[] args) {
         int[][] dobleArray = new int[4][4];
         System.out.println("Заполнение двумерного массива значениями:");
-        fillArray(dobleArray);
-        plusMinusString(dobleArray);
+        int mas1 = 0;
+
+        fillArray(dobleArray, mas1);
+
+        System.out.println(Arrays.toString(dobleArray));
+
     }
 
-    public static void fillArray(int[][] dobleArray) {
-        int mas1 = 0;
+    private static int[][ ]fillArray(int[][] dobleArray, int mas1) {
         for (int i = 0; i < dobleArray.length; i++) {
             for (int j = 0; j < dobleArray[i].length; j++) {
                 dobleArray[i][j] = mas1 + 1;
                 mas1++;
-            }
-        }
-    }
-
-    public static void plusMinusString(int[][] dobleArray) {
-        for (int i = 0; i < dobleArray.length; i++) {
-            for (int j = 0; j < dobleArray[i].length; j++) {
                 if (i % 2 != 0)
-                    dobleArray[i][j] = dobleArray[i][j] * (-1);
+                    dobleArray[i][j] = dobleArray[i][j]*(-1);
             }
             System.out.println(Arrays.toString(dobleArray[i]));
-        }
+        }return dobleArray;
     }
 }
 

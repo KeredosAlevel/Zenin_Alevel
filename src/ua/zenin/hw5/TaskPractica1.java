@@ -16,7 +16,7 @@ public class TaskPractica1 {
         sum = getSumInMassive(min, max, sum, array);
 
         System.out.println(Arrays.toString(array));
-        System.out.println("Сумма элементов массива равна: " + sum);
+        System.out.println("Сумма элементов массива выше 1000 равна: " + sum);
     }
 
     private static int getSumInMassive(int min, int max, int sum, int[] array) {

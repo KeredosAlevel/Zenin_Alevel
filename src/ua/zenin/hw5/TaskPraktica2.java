@@ -9,11 +9,26 @@ public class TaskPraktica2 {
         int[] growth = {185, -190, 165, 149, -175, -169, 149, -170, 187, -250};
 
         boolean boys = true;
+        boolean girls = true;
         double sum = 0;
         int amount = 0;
 
         growthBoys(growth, sum, amount, boys);
+
+        growtGirls(growth, girls, sum, amount);
     }
+
+    private static void growtGirls(int[] growth, boolean girls, double sum, int amount) {
+        for (int i = 0; i < growth.length; i++) {
+            if ((girls && growth[i] > 0)) {
+                amount++;
+                sum += growth[i];
+
+            }
+        }
+        System.out.println("The average height of girls is: "+ sum / amount+ " см.");
+    }
+
     private static void growthBoys(int[] growth, double sum, int amount, boolean boys) {
         for (int i = 0; i < growth.length; i++) {
             if ((boys && growth[i] < 0)) {
@@ -26,6 +41,4 @@ public class TaskPraktica2 {
 
     }
 }
-
-
 

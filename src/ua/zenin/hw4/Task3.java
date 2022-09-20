@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class Task3 {
     public static void main(String[] args) {
 
-        int[] array = new int[1000];
+        int[] array = new int[10];
 
         fillingTheArray(array);
 
@@ -36,8 +36,9 @@ public class Task3 {
                 number++;
             }
              if (count != 1) {
-                rezult++;
+                 rezult++;
             }
+
             number = 2;
             count = 0;
         }return rezult;
