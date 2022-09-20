@@ -8,8 +8,8 @@ import java.util.Arrays;
 public class Task2 {
     public static void main(String[] args) {
         int[] array = new int[5];
-        int min = 10;
-        int max = 85;
+        int min = 1;
+        int max = 10;
 
         initialArray(array, min, max);
 
@@ -34,6 +34,3 @@ public class Task2 {
         return increase;
     }
 }
-
-
-

@@ -38,7 +38,6 @@ public class Task3 {
              if (count != 1) {
                  rezult++;
             }
-
             number = 2;
             count = 0;
         }return rezult;

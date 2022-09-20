@@ -20,34 +20,38 @@ public class Task3 {
         
         creatingArray(array, max, min);
 
-        printArray(array, newArray);
+        copyArray(array, newArray);
 
-        System.out.println("\n"+ " Converted Array:");
+        System.out.println(Arrays.deepToString(newArray));
+
+        System.out.println( "Converted Array:");
 
         arrayConversion(array);
+
+        System.out.println(Arrays.deepToString(array));
     }
-    private static void printArray(int[][] array, int[][] newArray) {
+    public static int[][] copyArray(int[][] array, int[][] newArray) {
         for (int i = 0; i < array.length; i++,System.out.println()) {
             for (int j = 0; j < array[i].length; j++) {
                 newArray[i][j] = array[j][i];
-                System.out.print(" " + newArray[i][j] + " ");
             }
         }
+        return newArray;
     }
-    private static void creatingArray(int[][] array, int max, int min) {
+    private static int[][] creatingArray(int[][] array, int max, int min) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int) (Math.random() * max + min);
             }
         }
+        return array;
     }
-    private static void arrayConversion(int[][] array) {
+    private static int[][] arrayConversion(int[][] array) {
         for (int i = 0; i < array.length; i++, System.out.println()) {
             for (int j = 0; j < array[i].length; j++) {
-                System.out.print(" " + array[i][j] + " ");
-
             }
         }
+        return array;
     }
 }
 

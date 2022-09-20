@@ -45,8 +45,4 @@ public class Task2 {
         }
         return rezult;
     }
-
-    public static void printMasive(int[] array) {
-        System.out.println("Initial array = " + Arrays.toString(array));
-    }
 }
