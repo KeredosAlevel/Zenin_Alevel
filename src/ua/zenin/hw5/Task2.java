@@ -13,7 +13,7 @@ public class Task2 {
 
         initialArray(array, min, max);
 
-        boolean increase = isIncrease(array);
+        boolean increase = isDescending(array);
 
         System.out.print("Initial array = " + Arrays.toString(array));
         System.out.println(increase ? "\n" + "Ascending sequence." : "\n" + "Non-increasing sequence.");
@@ -23,7 +23,7 @@ public class Task2 {
             array[i] = ((int) (Math.random() * max) + min);
         }
     }
-    private static boolean isIncrease(int[] array) {
+    private static boolean isDescending(int[] array) {
         boolean increase = false;
         for (int i = 1; i < array.length; i++) {
             if (array[i] >= array[i + 1]) {
