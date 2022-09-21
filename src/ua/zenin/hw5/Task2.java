@@ -26,7 +26,7 @@ public class Task2 {
     private static boolean isIncrease(int[] array) {
         boolean increase = false;
         for (int i = 1; i < array.length; i++) {
-            if (array[i] >= array[i - 1]) {
+            if (array[i] >= array[i + 1]) {
                 increase = true;
 
             } else {
