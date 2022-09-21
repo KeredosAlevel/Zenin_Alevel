@@ -12,7 +12,7 @@ public class Task1 {
 
         fillArray(dobleArray, mas1);
 
-        System.out.println(Arrays.toString(dobleArray));
+        System.out.println(Arrays.deepToString(dobleArray));
 
     }
 
@@ -24,8 +24,7 @@ public class Task1 {
                 if (i % 2 != 0)
                     dobleArray[i][j] = dobleArray[i][j]*(-1);
             }
-            System.out.println(Arrays.toString(dobleArray[i]));
-        }return dobleArray;
+        } return dobleArray;
     }
 }
 
