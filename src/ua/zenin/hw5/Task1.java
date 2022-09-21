@@ -15,7 +15,6 @@ public class Task1 {
         System.out.println(Arrays.deepToString(dobleArray));
 
     }
-
     private static int[][ ]fillArray(int[][] dobleArray, int mas1) {
         for (int i = 0; i < dobleArray.length; i++) {
             for (int j = 0; j < dobleArray[i].length; j++) {
@@ -24,7 +23,8 @@ public class Task1 {
                 if (i % 2 != 0)
                     dobleArray[i][j] = dobleArray[i][j]*(-1);
             }
-        } return dobleArray;
+        }
+        return dobleArray;
     }
 }
 
